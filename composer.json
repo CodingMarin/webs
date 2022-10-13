@@ -1,0 +1,25 @@
+{
+    "name": "azordev/app",
+    "description": "developed app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {   "name": "Alexander Marin",
+            "email": "marinalexnader691@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*",
+        "phpmailer/phpmailer": "6.1.*",
+        "ext-pdo" : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\" : "app/",
+            "app\\controllers\\" : "app/controller/",
+            "app\\model\\" : "app/model/"
+        }
+    }
+}

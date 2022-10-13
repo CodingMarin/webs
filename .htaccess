@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{HTTP_HOST} ^marin-dev.app
+RewriteRule (.*) https://www.marin-dev.app/$1 [R=301,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+<files home.php>
+order allow,deny
+deny from all
+</files>
+<Limit GET HEAD POST>
+    order allow,deny
+    deny from 000.000.000.000
+    deny from 000.000.000.000
+    deny from 000.000.000.000
+    allow from all
+</limit>
